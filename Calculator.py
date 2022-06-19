@@ -4,9 +4,9 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Dividu")
 
-choice = int(input("Enter choice (1/2/3/4): "))
 
-while True:
+while True :
+    choice = int(input("Enter choice (1/2/3/4): "))
     if choice in (1,2,3,4):
         number1 = int(input("Enter first number: "))
         number2 = int(input("Enter second number: "))
@@ -25,7 +25,7 @@ while True:
         else:
             print("Erro, Enter choice (1/2/3/4):")
            
-        nextcaculation = input("Let's do  next caculation (yes/no)")
+        nextcaculation = input("Let's do  next caculation ,Press any key to continue  (yes/no)")
         if nextcaculation == "no":
             break
     else:
