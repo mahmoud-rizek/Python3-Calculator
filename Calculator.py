@@ -1,32 +1,30 @@
-print("Select operation.")
-print("1. Addition")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Dividu")
-
-
-while True :
-    choice = int(input("Enter choice (1/2/3/4): "))
-    if choice in (1,2,3,4):
-        number1 = int(input("Enter first number: "))
-        number2 = int(input("Enter second number: "))
-        if choice == 1:
-            resulte = number1 + number2
-            print(f"{number1} + {number2} = {resulte}")
-        elif choice == 2:
-            resulte = number1 - number2
-            print(f"{number1} - {number2} = {resulte}")
-        elif choice == 3 :
-            resulte = number1 * number2
-            print(f"{number1} * {number2} = {resulte}")
-        elif choice == 4 :
-            resulte = number1 / number2
-            print(f"{number1} / {number2} = {resulte}")
+while True:
+    opration = int(input('''
+Select the Opration:
+1. Addtion
+2. Subtraction
+3. Multiplication
+4. Division
+'''))
+    if opration in (1,2,3,4):
+        n1 = int(input("Enter the first number: "))
+        n2 = int(input("Enter the second number: "))
+        if opration == 1 :
+            result = n1 + n2
+            print(f"{n1} + {n2} = {result}")
+        elif opration == 2 :
+            result = n1 - n2
+            print(f"{n1} - {n2} = {result}")
+        elif opration == 3 :
+            result = n1 * n2
+            print(f"{n1} * {n2} = {result}")
+        elif opration == 4 :
+            result = n1 / n2
+            print(f"{n1} / {n2} = {result}")
         else:
-            print("Erro, Enter choice (1/2/3/4):")
-           
-        nextcaculation = input("Let's do  next caculation ,Press any key to continue  (yes/no)")
-        if nextcaculation == "no":
-            break
+           print("Erro, Enter choice (1/2/3/4):")
+        nextcalculate = input("Let's do  next caculation ,Press any key to continue  (yes/no)")
+        if nextcalculate == 'no':
+                              break
     else:
-        print("Error, Enter choice from this list(1/2/3/4):")
+        print("Error, Please choice the opration from 1 to 4")
